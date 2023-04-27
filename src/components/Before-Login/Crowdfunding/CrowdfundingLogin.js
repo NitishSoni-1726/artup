@@ -52,7 +52,7 @@ function CrowdfundingLogin() {
         localStorage.setItem("state", true);
         localStorage.setItem("id", id);
         localStorage.setItem("section", "crowdfunding");
-        window.location.replace(`/crowdfunding/${id}/home`);
+        window.location.replace(`/crowdfunding/${id}`);
       } else if (data[i].email === email && data[i].password !== password) {
         failed.classList.remove("d-none");
         document

@@ -51,10 +51,7 @@ function App() {
         <Router>
           <NavbarC />
           <Routes>
-            <Route
-              path={"/crowdfunding/" + id + "/home"}
-              element={<HomeC />}
-            ></Route>
+            <Route path={"/crowdfunding/" + id} element={<HomeC />}></Route>
           </Routes>
         </Router>
       </>
