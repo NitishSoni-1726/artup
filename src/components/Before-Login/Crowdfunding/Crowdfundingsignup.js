@@ -129,9 +129,6 @@ function Crowdfundingsignup() {
     const password = document.getElementById(
       "crowdfunding-signup-password"
     ).value;
-    const profilepicture = document.getElementById(
-      "crowdfunding-signup-fileupload"
-    ).files[0];
     const emaildata = email.replace(".", "");
     const data = {
       firstname: firstName,
@@ -155,12 +152,6 @@ function Crowdfundingsignup() {
     const success = document.getElementById("crowdfunding-signup-alert");
     success.classList.remove("d-none");
     both();
-  }
-  function verifyOTP() {
-    document.getElementById("otp").classList.remove("d-none");
-  }
-  function submitOTP() {
-    document.getElementById("otp").classList.add("d-none");
   }
   return (
     <>
@@ -300,13 +291,6 @@ function Crowdfundingsignup() {
                                 required
                                 className="form-control form-control-lg"
                               />
-                              <button
-                                type="button"
-                                className="btn btn-warning ms-1"
-                                onClick={verifyOTP}
-                              >
-                                Verify
-                              </button>
                             </div>
                           </div>
 
