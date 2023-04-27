@@ -1,38 +1,234 @@
-.App {
-  text-align: center;
+body {
+  background: #343a40;
+}
+.content-container {
+  height: 90vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.logo {
+  letter-spacing: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.caption {
+  position: absolute;
+  top: 35%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.details {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 30px;
+}
+.footer-details {
+  font-size: 13px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 67vh;
+}
+.password-authentication {
+  font-size: 10px;
+}
+.form::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+.form::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: black;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-family: "Copperplate";
+}
+.loginicon {
+  font-size: 20px;
+}
+
+.fa-google {
+  color: rgb(219 68 55);
+}
+
+.fa-twitter {
+  color: rgb(29 161 242);
+}
+
+.fa-linkedin {
+  color: rgb(0 119 181);
+}
+
+.fa-facebook {
+  color: rgb(66 103 178);
+}
+
+.fa-instagram {
+  color: rgb(253 36 76);
+}
+
+.investorterms {
+  font-size: 15px;
+  height: 40vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.accordion-button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.accordion-body {
+  font-size: 12px;
+}
+
+.profileimage {
+  border-radius: 100%;
+  width: 200px;
+  height: 210px;
+}
+.datacard {
+  height: 65vh;
+}
+.cardpitch {
+  height: 10vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.firstsection {
+  height: 75vh;
+}
+
+.imagedata {
+  margin-top: 6px;
+  width: 300px;
+  height: 180px;
+}
+
+.datacard:hover {
+  transform: scale(1.1);
+}
+
+.pitchdata {
+  max-width: 300px;
+  width: 270px;
+}
+
+.countdata {
+  width: 300px;
+}
+
+.investorimagedata {
+  margin-top: 10px;
+  border: 2px dashed white;
+  width: 290px;
+  height: 290px;
+  border-radius: 100%;
+}
+
+.databaseimage {
+  width: 600px;
+  height: 400px;
+}
+
+.browse-data {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.radiobuttons {
+  height: 150px;
+}
+
+.nav-item {
+  font-size: 25px;
+}
+.nav-item:hover {
+  opacity: 70%;
+}
+
+.investordatacard:hover {
+  transform: scale(1.1);
+}
+
+.browseselect {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.searchinput {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right-color: green;
+}
+.searchbutton {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
-@keyframes App-logo-spin {
+.filterdata {
+  width: 240px;
+}
+.browseselect:hover {
+  opacity: 60%;
+}
+
+.likebutton {
+  font-size: 10px;
+  height: 30px;
+}
+
+.goalsdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 15px;
+}
+
+.aboutdataimage {
+  height: 25%;
+  width: 25%;
+}
+
+.annimation {
+  animation-name: pop-in;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes pop-in {
   from {
-    transform: rotate(0deg);
+    transform: scale(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
+}
+
+.user-content {
+  position: absolute;
+  top: 10%;
+}
+
+.profile-picture {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  border: 2px dotted white;
+}
+
+.home-icon {
+  font-size: 35px;
 }
