@@ -23,11 +23,6 @@ function StartupDatabase(props) {
     fundingdone.classList.add("d-none");
     fundingpending.classList.remove("d-none");
   }
-  function likecount(e) {
-    if (e.target.checked) {
-      console.log("hello");
-    }
-  }
 
   return (
     <>
@@ -42,7 +37,7 @@ function StartupDatabase(props) {
           type="checkbox"
           className="btn-check likebutton"
           id={props.name}
-          onClick={likecount}
+          disabled
         />
         <label
           className="btn btn-outline-dark likebutton ms-1"
